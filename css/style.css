@@ -1,0 +1,886 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root{
+  --main-color:#cb2938;
+  --bg-color:#ececec;
+  --accent-color:#2b2b2b;
+  --line-color:#c1c1c1;
+}
+/* ----------------------------
+　　　全体構造
+ ----------------------------*/
+body{
+  font-family: 'Roboto','Noto Sans JP', sans-serif;
+  font-size: 16px;
+  color: var(--accent-color);
+  background-color: #fff;
+}
+.content{
+  width: 960px;
+  margin: 0 auto 20px auto;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: var(--accent-color);
+}
+a:hover{
+  color: var(--main-color);
+}
+p{
+  line-height: 1.5;
+  font-style: normal;
+}
+.small{
+  font-size: 12px;
+  line-height: 1.5;
+}
+section{
+  margin-bottom: 40px;
+}
+i{
+  margin-right: 5px;
+}
+main{
+  width: 630px;
+  float: left;
+  margin-bottom: 100px;
+}
+main section.button a:first-child{
+  margin-right: 30px;
+}
+sup{
+  font-size: 10px;
+}
+/* ----------------------------
+　　　ヘッダー
+ ----------------------------*/
+header .inner{
+  width: 960px;
+  height: 110px;
+  margin: 0 auto;
+  position: relative;
+}
+header .inner h1{
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+header .inner ul{
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+header .inner li{
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+}
+header .inner li.access i.fa-map-marker-alt{
+  font-size: 18px;
+  color: var(--main-color);
+}
+header .inner li.access{
+  width: 130px;
+  border-right: 1px solid var(--accent-color);
+}
+header .inner li.button a{
+  display: block;
+  border: 1px solid var(--main-color);
+  width: 130px;
+  height: 30px;
+  border-radius: 5px;
+  color: var(--main-color);
+}
+header .inner li.button a:hover{
+  background-color: var(--main-color);
+  color: #fff;
+}
+header .navbar{
+  background-color: var(--accent-color);
+}
+header .navbar ul{
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+header .navbar li{
+  float: left;
+}
+/* ----------------------------
+　　　キャッチ部分
+ ----------------------------*/
+.catch{
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: relative;
+  margin-bottom: 40px;
+  margin-left: 30px;
+}
+.copy figure{
+  margin-bottom: 30px;
+}
+.copy{
+  position: absolute;
+  bottom: 0;
+}
+.copy p{
+  width: 375px;
+}
+/* ----------------------------
+　　　メイン　ホーム
+ ----------------------------*/
+.home main figure{
+  text-align: center;
+}
+.home main ul{
+  margin-bottom: 20px;
+}
+.home main ul.news{
+  background-color: var(--bg-color);
+  border: 2px solid var(--main-color);
+}
+.home main li.news a{
+  width: 570px;
+  height: 70px;
+  display: block;
+  color: var(--main-color);
+  margin: 0 auto;
+  line-height: 70px;
+  border-bottom: 1px solid var(--line-color);
+  background-image: url("../images/design-assets/top-yajirusi.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.home main li.news:last-child{
+  border-bottom: 0;
+}
+.home main table tr{
+  border-bottom: 1px dotted var(--line-color);
+  height: 70px;
+  line-height: 70px;
+}
+.home main table tr:first-child{
+  border-top: 1px dotted var(--line-color);
+}
+.home main table td .news,main table td .exam,main table td .event{
+  width: 65px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
+}
+.home main table td .news{
+  background-color: var(--main-color);
+  color: #fff;
+}
+.home main table td .exam{
+  background-color: #3cb296;
+  color: #fff;
+}
+.home main table td .event{
+  background-color: #ffd700;
+}
+.home main table td.time{
+  width: 135px;
+  text-align: center;
+}
+.home main table td.text{
+  max-width: 430px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.home main table a:hover{
+  color: var(--main-color);
+}
+/* ----------------------------
+　　　サイド
+ ----------------------------*/
+aside{
+  width: 300px;
+  float: right;
+  margin-bottom: 40px;
+}
+aside img{
+  margin-bottom: 20px;
+}
+
+/* ----------------------------
+　　　フッター
+ ----------------------------*/
+footer{
+  clear: both;
+  background-color: var(--bg-color);
+}
+footer .inner{
+  position: relative;
+  width: 960px;
+  height: 190px;
+  margin: 0 auto;
+}
+footer .inner ul{
+  float: left;
+}
+footer .inner nav.left{
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+footer .inner nav.right{
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+footer .inner ul{
+  margin-left: 30px;
+}
+footer .inner li{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+footer .inner .gotop{
+  position: absolute;
+  top: -40px;
+  right: 0;
+}
+footer .notes{
+  height: 60px;
+  background-color: var(--accent-color);
+}
+footer .notes p{
+  width: 960px;
+  line-height: 60px;
+  text-align: right;
+  margin: 0 auto;
+  color: #fff;
+}
+footer .inner i{
+  font-size: 32px;
+}
+footer .inner i.fa-twitter-square{
+  color: #1da1f2;
+}
+footer .inner i.fa-line{
+  color: #00c300;
+}
+footer .inner i.fa-blogger{
+  color: #0a398b;
+}
+footer .inner i.fa-external-link-alt{
+  font-size: 14px;
+  margin-left: 5px;
+  color: var(--main-color);
+}
+/* ----------------------------
+　　　キャッチ部分　ホーム
+ 　----------------------------*/
+.home .catch{
+  background-image: url("../images/design-assets/top-img.jpg");
+}
+
+/* ----------------------------
+　　　キャッチ部分　学科紹介
+ 　----------------------------*/
+ .course .catch{
+   background-image: url("../images/design-assets/course-img.jpg");
+ }
+/* ----------------------------
+ 　　　メイン　学科紹介
+   ----------------------------*/
+.course main section{
+  overflow: hidden;
+}
+.course main h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.course main .classgroup{
+  width: 200px;
+  height: 220px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.course main .classgroup:nth-child(3n){
+  margin-right: 0px;
+}
+.course main .classgroup h5{
+  height: 42px;
+  line-height: 42px;
+  background-color: var(--bg-color);
+  font-size: 14px;
+  border-bottom: 2px solid var(--main-color);
+  padding-left: 10px;
+}
+.course main .classgroup figure{
+  margin-bottom: 10px;
+}
+.course main .classgroup a{
+  background-color: var(--main-color);
+  text-align: center;
+  line-height: 30px;
+  display: block;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.course main h3,.design main h3{
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--main-color);
+  font-size: 20px;
+  margin-bottom: 15px;
+  line-height: 25px;
+  overflow: hidden;
+}
+.course main .chara p,.course main .chara2 p{
+  overflow: hidden;
+}
+.course main section.chara figure{
+  float: right;
+  margin-left: 20px;
+}
+.course main section.chara2 figure{
+  float: left;
+  margin-right: 20px;
+}
+.course main h4{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+  color: var(--main-color);
+}
+.course main section.chara3 figure{
+  margin-bottom: 20px;
+}
+.course main section.chara3 a{
+  float: right;
+  margin-left: 15px;
+}
+/* ----------------------------
+  　　　キャッチ部分　資料請求
+   ----------------------------*/
+.pamphlet .catch{
+  background-image: url("../images/design-assets/pamphlet-img.jpg");
+   }
+/* ----------------------------
+   　　　メイン　資料請求
+   ----------------------------*/
+.pamphlet main table{
+  width: 630px;
+  margin-bottom: 20px;
+   }
+.pamphlet main table caption{
+  margin-bottom: 20px;
+}
+.pamphlet main table tr{
+  border: 1px solid var(--line-color);
+  height: 52px;
+  font-size: 14px;
+   }
+.pamphlet main table td.head{
+  width: 200px;
+  background-color: var(--bg-color);
+  border-right: 1px solid var(--line-color);
+  position: relative;
+  padding: 19px 0 0 10px;
+}
+.pamphlet main table td.head span{
+  display: inline-block;
+  font-size: 12px;
+  width: 43px;
+  height: 20px;
+  border-radius: 3px;
+  line-height: 20px;
+  text-align: center;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.pamphlet main table td.head span.required{
+  color: #fff;
+  background-color: var(--main-color);
+}
+.pamphlet main table td.head span.any{
+  background-color: var(--line-color);
+}
+.pamphlet main table td input{
+  border-radius: 5px;
+  margin-left: 10px;
+  border: 1px solid var(--line-color);
+}
+.pamphlet main table td input.area{
+  width: 250px;
+  height: 30px;
+}
+.pamphlet main table td input.area2{
+  width: 100px;
+  height: 30px;
+}
+.pamphlet main table td.checkbox01{
+  line-height: 1.5;
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+.pamphlet main form p.submit{
+  text-align: center;
+}
+.pamphlet main form button{
+  width: 200px;
+  height: 50px;
+  border: 1px solid var(--main-color);
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.pamphlet main form button:hover{
+  background-color: var(--main-color);
+  color: #fff;
+}
+/* ----------------------------
+    　キャッチ部分　デザイン科
+   ----------------------------*/
+.design .catch{
+  background-image: url("../images/design-assets/design-img.jpg");
+   }
+/* ----------------------------
+     　　　メイン　デザイン科
+   ----------------------------*/
+.design main{
+  overflow: hidden;
+}
+.design main section{
+    margin-bottom: 30px;
+}
+.design main section h4{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.design main section h2{
+  color: var(--main-color);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.design main .lesson{
+  width: 200px;
+  height: 500px;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+}
+.design main .lesson:last-child{
+  margin-right: 0;
+}
+.design main .lesson figure{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.design main .lesson figure.img{
+  position: absolute;
+  bottom: 0;
+}
+.design main .taisaku{
+  clear: both;
+}
+.design main table tr.weektable{
+  height: 45px;
+}
+.design main table tr.daytable{
+  height: 25px;
+}
+.design main table tr.timetable{
+  height: 40px;
+}
+.design main table td{
+  border: 2px solid var(--accent-color);
+  width: 210px;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+   }
+.design main table tr.daytable p{
+  text-align: center;
+}
+.design main table td.week{
+  background-color: var(--bg-color);
+}
+.design main table td.sta{
+  background-color: #f2cdd0;
+}
+/* ----------------------------
+       キャッチ部分　お問合せ
+   ----------------------------*/
+   .contact .catch{
+     background-image: url("../images/design-assets/contact-img.jpg");
+   }
+/* ----------------------------
+        　メイン　お問合せ
+   ----------------------------*/
+.contact main h2{
+  background-color: var(--bg-color);
+  height: 70px;
+  width: 630px;
+  margin-bottom: 20px;
+}
+.contact main section{
+  margin-left: 30px;
+}
+.contact main h2 p{
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--main-color);
+  margin-left: 30px;
+  line-height: 70px;
+}
+.contact main table tr{
+  height: 40px;
+  vertical-align: middle;
+}
+.contact main table th{
+  padding-bottom: 16px;
+}
+.contact main table th span{
+  display: inline-block;
+  font-size: 14px;
+  width: 120px;
+  height: 40px;
+  border-right: 4px solid var(--accent-color);
+  line-height: 40px;
+  text-align: left;
+}
+.contact main table td{
+  padding-left: 20px;
+  line-height: 1.5;
+}
+/* ----------------------------
+       キャッチ部分　案内
+   ----------------------------*/
+.annai .catch{
+     background-image: url("../images/design-assets/annai-img.jpg");
+   }
+/* ----------------------------
+        メイン　案内
+   ----------------------------*/
+.annai main section{
+     overflow: hidden;
+   }
+.annai main .head-kousi .head-img{
+  float: left;
+}
+.annai main .head-kousi .head-copy{
+  width: 400px;
+  float: right;
+}
+.annai main .head-kousi .head-copy h2{
+  height: 40px;
+  border-bottom: 2px solid var(--main-color);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.annai main section.sp-kousi1,.annai main section.sp-kousi2{
+  width: 200px;
+  height: 450px;
+  margin-right: 15px;
+}
+.annai main section.sp-kousi1{
+  float: left;
+}
+.annai main .kousi{
+  width: 200px;
+  height: 400px;
+  float: left;
+}
+.annai main .itiran .kousi{
+  margin-right: 15px;
+}
+.annai main .itiran .kousi:nth-child(3n){
+  margin-right: 0px;
+}
+.annai main h3{
+  clear: both;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* ----------------------------
+        キャッチ部分　講習
+   ----------------------------*/
+.event .catch{
+        background-image: url("../images/design-assets/event-img.jpg");
+      }
+/* ----------------------------
+        メイン　講習
+   ----------------------------*/
+.event main
+/*タブ切り替え全体のスタイル*/
+.event main article.lecture .tabs {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 630px;
+}
+/*タブのスタイル*/
+.event main article.lecture .tab_item {
+  width: calc(100%/3);
+  height: 50px;
+  border-bottom: 3px solid var(--main-color);
+  background-color: #d9d9d9;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #565656;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bolder;
+  transition: all 0.2s ease;
+}
+.event main article.lecture .tab_item:hover {
+  opacity: 0.75;
+}
+/*ラジオボタンを全て消す*/
+.event main article.lecture input[name="tab_item"] {
+  display: none;
+}
+/*タブ切り替えの中身のスタイル*/
+.event main article.lecture .tab_content {
+  display: none;
+  padding: 30px;
+  clear: both;
+  overflow: hidden;
+}
+/*選択されているタブのコンテンツのみを表示*/
+#all:checked ~ #all_content,
+#programming:checked ~ #programming_content,
+#design:checked ~ #design_content {
+  display: block;
+}
+/*選択されているタブのスタイルを変える*/
+.event main article.lecture .tabs input:checked + .tab_item {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.event main article.lecture .tab_content table.touki{
+  margin-bottom: 10px;
+}
+.event main article.lecture .tab_content table.touki tr{
+  height: 50px;
+  border: 1px solid var(--accent-color);
+}
+.event main article.lecture .tab_content table.touki th{
+  width: 170px;
+  border-right: 1px solid var(--accent-color);
+  text-align: center;
+  vertical-align: middle;
+}
+.event main article.lecture .tab_content table.touki td.season{
+  width: 400px;
+  text-align: center;
+  vertical-align: middle;
+}
+.event main article.lecture .tab_content table.touki td.daytable{
+  height: 50px;
+  width: 100px;
+  border-right: 1px solid var(--accent-color);
+  text-align: center;
+  vertical-align: middle;
+}
+.event main article.lecture .tab_content table.touki td.timetable{
+  height: 50px;
+  width: 300px;
+  text-align: center;
+  vertical-align: middle;
+}
+.event main article.lecture table.touki caption,.event main article.dessincourse caption{
+  caption-side: bottom;
+  padding-top: 20px;
+}
+.event main article.lecture caption a,.event article.entry caption a,.event article.entry a{
+  display: inline-block;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  color: var(--main-color);
+}
+.event main article.lecture .tab_content table.touki caption a.more{
+  width: 180px;
+  margin-right: 10px;
+}
+.event main article.lecture .tab_content table.touki caption a.download,.event article.entry a{
+  width: 369px;
+}
+.event main article.lecture .tab_content table.touki caption a:hover,.event article.entry a:hover{
+  background-color: var(--main-color);
+  color: #fff;
+}
+.event article.dessincourse h2{
+  height: 50px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.event article.dessincourse .courseday{
+  overflow: hidden;
+}
+.event article.dessincourse .courseday h3{
+  font-size: 35px;
+  color: var(--main-color);
+  font-weight: bolder;
+  margin-right: 10px;
+  float: left;
+}
+.event article.dessincourse .courseday p{
+  font-size: 14px;
+  height: 80px;
+  line-height: normal;
+  overflow: hidden;
+}
+.event article.dessincourse .inner{
+  background-color: var(--bg-color);
+  clear: both;
+}
+.event article.dessincourse .schedule{
+  background-color: var(--bg-color);
+  padding: 0 30px 30px 30px;
+  margin-bottom: 40px;
+}
+.event article.dessincourse th,.event article.dessincourse tr,.event article.dessincourse td{
+  border: 3px solid var(--bg-color);
+  text-align: center;
+  vertical-align: middle;
+}
+.event article.dessincourse table{
+  background-color: #fff;
+}
+.event article.dessincourse table p{
+  font-size: 14px;
+}
+span.free{
+  color: var(--main-color);
+  font-size: 20px;
+}
+.event article.dessincourse table p.small{
+  text-align: center;
+}
+.event article.dessincourse th.h-common{
+  height: 70px;
+  width: 120px;
+}
+.event article.dessincourse th.first{
+  height: 110px;
+}
+.event article.dessincourse td.lunch{
+  height: 20px;
+  width: 260px;
+  background-color: var(--bg-color);
+}
+.event article.dessincourse td.middle {
+  width: 190px;
+}
+.event article.dessincourse tr.t-header{
+  background-color: var(--bg-color);
+}
+.event article.entry figure.entry-img{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.event article.entry section{
+  overflow: hidden;
+}
+.event article.entry .entry-type{
+  width: 200px;
+  height: 200px;
+  margin-right: 15px;
+  border: 1px solid var(--accent-color);
+  border-radius: 10px;
+  float: left;
+}
+.event article.entry .entry-type:last-child{
+  margin-right: 0;
+}
+.event article.entry .entry-type p{
+  font-size: 14px;
+  padding: 14px;
+}
+.event article.entry .entry-type h3{
+  background-color: var(--accent-color);
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+}
+.event article.entry .entry-type h3 figure{
+  position: absolute;
+  left: 30px;
+  bottom: 15px;
+}
+.event article.entry .entry-type table.address{
+  clear: both;
+}
+.event article.entry table.style1{
+  margin-bottom: 30px;
+}
+.event article.entry table.style1 th{
+  width: 248px;
+  vertical-align: top;
+  text-align: center;
+  border-right: 2px solid var(--line-color);
+}
+.event article.entry table.style1 td{
+  width: 382px;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.event article.entry p{
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.event article.entry a.download{
+  margin-bottom: 30px;
+}
+.event article.entry .payment table.box{
+  border: 1px solid var(--accent-color);
+}
+.event article.entry .payment table.box tr{
+  height: 30px;
+}
+.event article.entry .payment table.box th{
+  width: 100px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--accent-color);
+  font-size: 12px;
+  vertical-align: middle;
+}
+.event article.entry .payment table.box td{
+  width: 180px;
+  border: 1px solid var(--accent-color);
+  font-size: 12px;
+  vertical-align: middle;
+}
